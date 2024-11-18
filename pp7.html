@@ -1,0 +1,137 @@
+
+ 
+ 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image with Toggle Data Button</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <img src="kl.jfif" alt="Sample Image" class="main-image">
+
+        <button onclick="showData()" class="toggle-button">Show Data</button>
+        
+        <div id="data" class="data-content">
+            <!-- The content you want to display on button click -->
+            <p>
+               
+:  مركز الفرقان للتخاطب 
+عنوان المركز :شارع العشرين متفرع من شارع فيصل أمام كشرى رسلان
+المحافظة / الجيزة 
+نظام المركز : نهارى / جلسات 
+المقاييس(ستانفورد بينيه / مقياس السلوك التكيفى الفاينالند / الينوى/كارز) يتم تطبيقها داخل المركز
+أرقام التواصل
+01148097404
+
+
+ 
+
+            </p>
+        </div>
+
+        <!-- Return to Spec Page Button -->
+        <button onclick="window.location.href='feature1.html'" class="return-button">  previous Page</button>
+    </div>
+
+    <div class="contact-icons">
+        <!-- Telegram Icon -->
+         <h4>for reservation    للحجز</h4>
+        <a href="https://t.me/01158279543" target="_blank" title="Contact on Telegram">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram Icon">
+        </a>
+    
+        <!-- WhatsApp Icon -->
+        <a href="https://wa.me/01158279543" target="_blank" title="Contact on WhatsApp">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Icon">
+        </a>
+      </div>
+    <style>
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #26acd4;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            text-align: center;
+            width: 80%;
+        }
+
+        .main-image {
+            max-width: 50vw;
+            height: 50vh;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .toggle-button, .return-button {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-top: 10px;
+        }
+
+        .toggle-button {
+            background-color: #b8980b;
+        }
+
+        .toggle-button:hover {
+            background-color: #b30068;
+        }
+
+        .return-button {
+            background-color: #28a745;
+        }
+
+        .return-button:hover {
+            background-color: #218838;
+        }
+
+        .data-content {
+            display: none;
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #e9ecef;
+            border-radius: 5px;
+            color: #333;
+            text-align: center;
+            font-size: 18px;
+        }
+    </style>
+    
+    <script>
+        function showData() {
+            const dataContent = document.getElementById("data");
+
+            // Toggle the display of the data content
+            if (dataContent.style.display === "none" || dataContent.style.display === "") {
+                dataContent.style.display = "block";
+            } else {
+                dataContent.style.display = "none";
+            }
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
+

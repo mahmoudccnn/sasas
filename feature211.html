@@ -1,0 +1,121 @@
+
+ 
+
+ 
+
+     
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Info</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        .info {
+            display: none; /* Initially hidden */
+            margin-top: 20px;
+        }
+        .toggle-button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .toggle-button:hover {
+            background-color: #0056b3;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <img src="kl.jfif" alt="Descriptive Image">
+    <button class="toggle-button" id="toggleButton">Show Data</button>
+    <div class="info" id="info">
+        <h1>Data</h1>
+        <p >
+ 
+    
+    
+    
+    
+            اسم المركز/ المستقبل
+            عنوان المركز / المهندسين - 17 شارع اليمن بجوار بنك عوده ميدان لبنان 
+        المهندسين 01150002009
+        
+        
+            
+         
+        
+        
+    مركز الفرقان للتخاطب 
+    عنوان المركز 
+    شارع العشرين متفرع من شارع فيصل أمام كشرى رسالن 
+    المحافظة / الجيزة 
+    نظام المركز 
+     نهارى / جلسات 
+    المقاييس)ستانفورد بينيه / مقياس السلوك التكيفى الفاينالند / الينوى/كارز
+    يتم تطبيقها داخل المركز
+    أرقام التواصل
+    01148097404
+    01128840680
+    01004845470 
+ 
+
+    مركز يحيي
+    1-  عنوان المركز/٢٩ش القومية العربية متفرع من الوفاء والامل_ الملك فيصل _الجيزة
+    2-المحافظة التى يقع بها / محافظة الجيزة
+    3-نظام المركز / نهارى _جلسات _برايفت
+    4-الأنشطة التى يتم استخدامها دخل المركز / تخاطب _تنمية مهارات _صعوبات تعلم _مهارت حركية _أنشطة حسية _علاج بالفن
+    5-المقاييس التى يتم استخدامها مع الأطفال /اختبار الذكاء _اختبارات التوحد (كارز _جيليام)_اختبار كونرز لقياس فرط الحركة وتشتت الانتباه-اختبارات صعوبات التعلم -اختبارات اللغة (ابوحسيبة _نهلة الرفاعى _داليا مصطفى 
+    البرامج المستخدمة مع الأطفال/ لوفاس وايبلز وتيتش وبيكس
+    6_جميع البرامج والمقاييس يتم استخدامها داخل المركز
+    رقم المركز : 01100308899- 01008578179
+    
+    
+
+
+
+ 
+        
+        
+        </p>   </div>
+</div>
+
+<script>
+    document.getElementById('toggleButton').onclick = function() {
+        var infoDiv = document.getElementById('info');
+        if (infoDiv.style.display === 'none' || infoDiv.style.display === '') {
+            infoDiv.style.display = 'block';
+            this.textContent = 'Hide Data';
+        } else {
+            infoDiv.style.display = 'none';
+            this.textContent = 'Show Data';
+        }
+    };
+</script>
+
+</body>
+</html>

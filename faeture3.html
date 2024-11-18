@@ -1,0 +1,74 @@
+
+
+
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Features Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #3098c2;
+        }
+        img {
+            max-width: 100%;
+            height: 60vh;
+            margin: 20px 0;
+        }
+        .features {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .feature {
+            background-color: #fefeff;
+            color: rgb(55, 15, 235);
+            padding: 15px 20px;
+            margin: 10px;
+            border-radius: 5px;
+            text-align: center;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .feature:hover {
+            background-color: #c7194d;
+        }
+        @media (min-width: 600px) {
+            .features {
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .feature {
+                margin: 10px;
+                flex: 1 1 150px; /* responsive width */
+            }
+        }
+    </style>
+</head>
+<body>
+
+<img src="kl.jfif" alt="Feature Image">
+
+<div class="features">
+    <div class="feature" onclick="openPage('feature311.html')">giza</div>
+    <div class="feature" onclick="openPage('feature222.html')">  </div>
+    <div class="feature" onclick="openPage('feature333.html')">              </div> 
+</div>
+
+<script>
+    function openPage(page) {
+        window.location.href = page;
+    }
+</script>
+
+</body>
+</html>

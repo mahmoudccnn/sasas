@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Image with Location Buttons</title>
+    <style>
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        .container {
+            text-align: center;
+            width: 100%;
+            max-width: 800px; /* Increased max-width for larger layouts */
+        }
+
+        .main-image {
+            width: 100%;
+            height: auto;
+            max-height: 40vh;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .buttons-container {
+            display: grid;
+            gap: 20px; /* Increased gap between buttons */
+            justify-items: center;
+            padding: 10px; /* Added padding for spacing */
+        }
+
+        button {
+            width: 100%;
+            max-width: 250px; /* Increased max-width for more prominence */
+            height: 70px; /* Increased height */
+            font-size: 16px; /* Slightly larger font size */
+            font-weight: bold;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            text-align: center;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Responsive Grid Layout */
+        @media (min-width: 480px) {
+            .buttons-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (min-width: 768px) {
+            .buttons-container {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .buttons-container {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="kl.jfif" alt="Sample Image" class="main-image">
+        
+        <div class="buttons-container">
+            <!-- Location buttons with updated labels for pages pp1 to pp12 -->
+            <button onclick="openPage('pp1.html')" aria-label="الجيزه">الجيزه</button>
+            <button onclick="openPage('pp2.html')" aria-label="تجمع خامس">تجمع خامس</button>
+            <button onclick="openPage('pp3.html')" aria-label="فيصل">فيصل</button>
+            
+            
+            <button onclick="openPage('psssp.html')" aria-label="الجيزه">   القاهره</button>
+            <button onclick="openPage('pp4.html')" aria-label="فيصل">فيصل</button>
+            
+            <button onclick="openPage('psui.html')" aria-label="الجيزه">الجيزه</button>
+            <button onclick="openPage('psss.html')" aria-label="الجيزه">الجيزه</button>
+            <button onclick="openPage('plls.html')" aria-label="مدينة نصر"> حداءق حلوان    </button>
+         
+            <button onclick="openPage('pooos.html')" aria-label="المعادي">المطريه</button> 
+
+            <!-- Button to return to homepage -->
+            <button onclick="openPage('index.html')" aria-label="Return to homepage">رجوع إلى الصفحة الرئيسية</button>
+        </div>
+    </div>
+
+    <script>
+        function openPage(page) {
+            if (page === 'feature1.html') {
+                window.location.href = page;
+            } else {
+                window.open(page, "_blank");
+            }
+        }
+    </script>
+</body>
+</html>
